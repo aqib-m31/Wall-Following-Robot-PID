@@ -5,20 +5,20 @@ An autonomous wall following robot using ultrasonic sensors with **PID control**
 ## Implementations
 
 ### Right-Wall Following ([WallFollowingRobotPID.ino](WallFollowingRobotPID.ino))
+
 The program was tested on _AlphaBot2-Ar_, with two additional ultrasonic sensors mounted on the left and right sides. The left and right sensors were mounted slightly forward (near the front) to improve corner detection. Uses three ultrasonic sensors (front, left, and right). The left ultrasonic sensor could be used for left-wall following on the same platform.
 
 ### Left-Wall Following ([LeftWallFollowingRobotPID.ino](LeftWallFollowingRobotPID.ino))
+
 Tested on a custom robot. Uses two ultrasonic sensors (front and left).
 
 ## Working Principle
 
 1. **Sensors**:
-
    - Ultrasonic sensors measure distance to walls.
    - The left and right sensors were mounted slightly forward (near the front) rather than at the center to improve corner detection.
 
 2. **Control Logic (PID)**:
-
    - **PID controller** continuously adjusts motor speeds based on the error between the desired distance (setpoint) and actual distance from the wall.
    - **Proportional (Kp)**: Responds to current error magnitude
    - **Integral (Ki)**: Eliminates steady-state error over time
@@ -28,7 +28,6 @@ Tested on a custom robot. Uses two ultrasonic sensors (front and left).
    - **PID-controlled forward motion with differential steering** maintains consistent wall distance
 
 3. **Turns**:
-
    - Differential steering (varying left and right motor speeds) is used for smooth wall following along curves.
    - In-place turns are used for 90° sharp turns when a front wall is detected to prevent collision.
 
@@ -44,10 +43,10 @@ Tested on a custom robot. Uses two ultrasonic sensors (front and left).
 - **Better corner handling**: Gradual steering adjustments prevent overshooting during turns
 
 ## Demo
-| Left-Wall Following | Right-Wall Following |
-|:---:|:---:|
-| ![Demo Left Wall Following Robot PID GIF](./lwfr-pid-demo.gif) | ![Demo Right Wall Following Robot PID GIF](./rwfr-pid-demo.gif)|
 
+|                      Left-Wall Following                       |                      Right-Wall Following                       |
+| :------------------------------------------------------------: | :-------------------------------------------------------------: |
+| ![Demo Left Wall Following Robot PID GIF](./lwfr-pid-demo.gif) | ![Demo Right Wall Following Robot PID GIF](./rwfr-pid-demo.gif) |
 
 ## Problems Faced
 
@@ -63,11 +62,9 @@ Tested on a custom robot. Uses two ultrasonic sensors (front and left).
 - All sensors are functioning and mounted correctly (The left and right sensors are mounted toward the front corners of the robot, still facing directly left and right, to improve wall detection during turns).
 - PID control is implemented for smooth and stable wall-following with continuous error correction.
 
+## Mentored by
 
-## Mentored by: 
-
-Dr Tawseef Ahmed Teli
-Assistant Professor
-Higher Education Department
+Dr Tawseef Ahmed Teli<br>
+Assistant Professor<br>
+Higher Education Department<br>
 Govt. of Jammu and Kashmir, India
-               
