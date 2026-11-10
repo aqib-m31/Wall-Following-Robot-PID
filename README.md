@@ -62,3 +62,12 @@ Tested on a custom robot. Uses two ultrasonic sensors (front and left).
 - Floor surface is even and provides sufficient traction for controlled turns.
 - All sensors are functioning and mounted correctly (The left and right sensors are mounted toward the front corners of the robot, still facing directly left and right, to improve wall detection during turns).
 - PID control is implemented for smooth and stable wall-following with continuous error correction.
+
+
+Mentored by: 
+
+Dr Tawseef Ahmed Teli
+Assistant Professor
+Higher Education Department
+Govt. of Jammu and Kashmir, India
+               
