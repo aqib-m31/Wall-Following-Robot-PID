@@ -64,7 +64,7 @@ Tested on a custom robot. Uses two ultrasonic sensors (front and left).
 - PID control is implemented for smooth and stable wall-following with continuous error correction.
 
 
-Mentored by: 
+## Mentored by: 
 
 Dr Tawseef Ahmed Teli
 Assistant Professor
